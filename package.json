@@ -1,0 +1,42 @@
+{
+    "name": "wokeify",
+    "version": "0.0.0",
+    "description": "CLI tool to enforce inclusive language",
+    "main": "dist/src/cli.mjs",
+    "bin": {
+        "wokeify": "./dist/src/cli.mjs"
+    },
+    "type": "module",
+    "scripts": {
+        "build": "tsc -p tsconfig.json",
+        "prepublishOnly": "npm run build",
+        "test": "npm run build && node dist/test/test-wokeify.mjs"
+    },
+    "author": "Someone that got sacked for not being woke lol",
+    "license": "MIT",
+    "devDependencies": {
+        "@types/eslint": "^8.56.10",
+        "@types/glob": "^8.1.0",
+        "@types/htmlhint": "^1.1.5",
+        "@types/node": "^20.14.9",
+        "@types/yargs": "^17.0.32",
+        "i": "^0.3.7",
+        "npm": "^10.8.1",
+        "ts-node": "^10.9.2",
+        "typescript": "^5.5.3"
+    },
+    "dependencies": {
+        "@angular-eslint/eslint-plugin": "^18.1.0",
+        "@angular-eslint/eslint-plugin-template": "^18.1.0",
+        "@babel/core": "^7.24.7",
+        "@babel/eslint-parser": "^7.24.7",
+        "compromise": "^14.13.0",
+        "eslint": "^9.6.0",
+        "htmlhint": "^1.1.4",
+        "markdownlint": "^0.34.0",
+        "node-estree": "^4.0.0",
+        "simple-git": "^3.25.0",
+        "stylelint": "^16.6.1",
+        "yargs": "^17.7.2"
+    }
+}
